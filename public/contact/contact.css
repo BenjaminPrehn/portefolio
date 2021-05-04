@@ -1,0 +1,19 @@
+#contact-form{
+    border: solid black 1px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+#info{
+    text-align: center;
+}
+
+#main-con{
+    padding-top: 20px;
+}
+
+#image{
+    margin: 20px;
+    width: 60%;
+}

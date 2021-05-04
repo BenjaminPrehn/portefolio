@@ -1,0 +1,42 @@
+<div class="container" id="main-con">
+    <div class="row">
+      <div class="col-6" id="info">
+        <h2>Name: Benjamin prehn</h2>
+        <h2>Phone number: +45 4252****</h2>
+        <img id="image" src="https://i.imgur.com/dLtRuu0.png" alt="Contact me">
+        
+        
+      </div>
+      <div class="col-6" id="contact-form">
+        <h3>Contact me!</h3>
+        <div id="alert" class="alert alert-success" role="alert">
+            Email send succefully!
+          </div>
+        <form method="POST" action="/api/contact" onsubmit="clearForm()">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+              </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" required>
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="subject" name="subject" required>
+              </div>
+              <div class="mb-3">
+                <label for="text" class="form-label">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+              </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+      </div>
+    </div>
+  </div>
+
+  
+
+
+
