@@ -41,7 +41,7 @@ app.get("/skills", (req, res) => {
 });
 
 const server = app.listen(process.env.PORT || 8080, (error) => {
-    if (error){
+    if (error) {
         console.log(error);
     }
     console.log("Server is running on port", server.address().port);

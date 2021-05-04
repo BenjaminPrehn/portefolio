@@ -1,12 +1,9 @@
-$(document).ready(function(){
+$(document).ready(() => {
     $("#alert").hide();
 
-    function clearForm(){
-        $("#alert").show();
-        //$("#name").val("");
-        //$("#email").val("");
-        //$("#subject").val("");
-        //$("#message").val("");
-    }
+    // $("form").submit(() => {
+    //     // alert("An email havee been sent - I'll bee in contact shortly");
+    //     $("#alert").show();
+    //   });
 
   });
