@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const nodemailer = require('nodemailer');
+require('dotenv').config();
 
 const bodyParser = require('body-parser');
 router.use(bodyParser.urlencoded({ extended: true }));
@@ -9,8 +10,8 @@ let transport = nodemailer.createTransport({
     host: "smtp-relay.sendinblue.com",
     port: 587,
     auth: {
-      user: "benjibob96@gmail.com",
-      pass: "XqjwB2cODUNH6fQW"
+      user: process.env.SMTP_USER,
+      pass: process.env.SMTP_PASS
     }
   });
 
